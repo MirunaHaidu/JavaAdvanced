@@ -17,5 +17,29 @@ public class MainToo {
         List<Grocery> groceries = new ArrayList<>();
         groceries.add(bakery);
         groceries.add(cola);
+
+
+        System.out.println("-------------------");
+
+        LinkedList list = new LinkedList();
+        Node node = new Node();
+        node.setValue(1);
+        node.setNext(null);
+
+
+        Node node2 = new Node();
+        node2.setValue(2);
+        node2.setNext(null);
+
+
+        Node node3 = new Node();
+        node3.setValue(3);
+        node3.setNext(null);
+        list.add(node)
+                .add(node2)
+                .add(node3);
+
+        list.printList();
+
     }
 }

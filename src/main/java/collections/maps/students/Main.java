@@ -1,0 +1,36 @@
+package collections.maps.students;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Student george = new Student("George", "Coconel", "19674324235");
+        Student marcel = new Student("Marcel", "Marius", "195676545");
+
+        Catalog studentGrades = new Catalog();
+        studentGrades.addGrade(george, new Grade(10, Course.MATHEMATICS));
+        studentGrades.addGrade(george, new Grade(7, Course.PHYSICS));
+        studentGrades.addGrade(george, new Grade(7, Course.MATHEMATICS));
+        studentGrades.addGrade(george, new Grade(9, Course.COMPUTER_SCIENCE));
+
+        studentGrades.addGrade(marcel, new Grade(9, Course.MATHEMATICS));
+        studentGrades.addGrade(marcel, new Grade(10, Course.PHYSICS));
+        studentGrades.addGrade(marcel, new Grade(10, Course.COMPUTER_SCIENCE));
+        studentGrades.addGrade(marcel, new Grade(9, Course.COMPUTER_SCIENCE));
+
+        studentGrades.printGrades(george);
+        studentGrades.printGrades(marcel);
+
+        System.out.println("----------------");
+        studentGrades.printAverage(george);
+        studentGrades.printAverage(marcel);
+
+
+
+
+
+
+
+
+
+    }
+}
