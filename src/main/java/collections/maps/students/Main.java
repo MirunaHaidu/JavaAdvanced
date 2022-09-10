@@ -5,6 +5,7 @@ public class Main {
     public static void main(String[] args) {
         Student george = new Student("George", "Coconel", "19674324235");
         Student marcel = new Student("Marcel", "Marius", "195676545");
+        Student bula = new Student("Bula", "Bulescu", "196543332");
 
         Catalog studentGrades = new Catalog();
         studentGrades.addGrade(george, new Grade(10, Course.MATHEMATICS));
@@ -24,6 +25,12 @@ public class Main {
         studentGrades.printAverage(george);
         studentGrades.printAverage(marcel);
 
+        System.out.println("----------------");
+        try {
+            studentGrades.printAverage(bula);
+        } catch(StudentNotFoundException e){
+            System.out.println("Student not found in our class!");
+        }
 
 
 
