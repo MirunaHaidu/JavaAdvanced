@@ -1,4 +1,4 @@
-package collections.maps;
+package collections.maps.someStuff;
 
 public enum Model {
     Volkswagen,

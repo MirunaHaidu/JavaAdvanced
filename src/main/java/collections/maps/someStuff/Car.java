@@ -1,4 +1,6 @@
-package collections.maps;
+package collections.maps.someStuff;
+
+import collections.maps.someStuff.Model;
 
 public class Car {
     private Model model;
